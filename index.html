@@ -12,23 +12,28 @@
 <body>
     <header class="site_header">
         <div class="wrapper_inner">
-            <nav class="site_header_nav">
+            <div class="notebook_details">
+                <h1 class="title" id="title">PORTFOLIO</h1>
+    <span>Name: Lugenie Raymond</span>
+    <time datetime="2026-09-26">2026-09-26</time>
+  </div>
+            <nav class="site_header_nav" id="site_header_nav">
                 <ol class="site_header_nav_list">
-                    <li class="site_header_nav_item"><a href="#about">About</a></li>
+                    <li class="site_header_nav_item" ><a href="#about">About</a></li>
                     <li class="site_header_nav_item"><a href="#projects">Projects</a></li>
-                    <li class="site_header_nav_item"><a href="#contact">Contact</a></li>
+                    <li class=""><a href="#contact">Contact</a></li>
                 </ol>
             </nav>
         </div>
     </header>
     <main>
-        <h1 class="title" id="title">PORTFOLIO</h1>
+        
         <section class="about_me" id="about">
             <div class="wrapper_inner">
                 <img src="https://media.licdn.com/dms/image/v2/D4E03AQGejRMk4Zkgmw/profile-displayphoto-scale_400_400/B4EZfWUrDFHgAg-/0/1751647434428?e=1792022400&v=beta&t=-6XRsvsNXYe5oc1euZ8VoOMrDm-swkR6kWO3FvqSB2c"
                     alt="Profile picture of Lugenie Raymond" class="profile_pic">
                 <h2 class="about_me_title">About Me</h2>
-                <h3>A few notes on who I am</h3>
+                <h3>A few notes on who <em>I</em> am</h3>
                 <p class="about_me_text">
                     Hi, I’m Lugenie “Lulu” Raymond, a computer science graduate based in West Palm Beach, Florida. I
                     hold a bachelor’s degree in Computer Science and a master’s degree in Engineering Management from
@@ -40,8 +45,10 @@
                     JavaScript by building projects that help me understand how thoughtful design and code work
                     together.</p>
 
-                <p>My goal is to grow into IT leadership and create technology that makes everyday tasks easier. Long
-                    term, I hope to help establish computer labs in Haiti and expand access to technology education.</p>
+                <blockquote>My goal is to grow into IT leadership and create technology that makes everyday tasks
+                    easier. Long
+                    term, I hope to help establish computer labs in Haiti and expand access to technology education.
+                </blockquote>
             </div>
         </section>
 
@@ -57,9 +64,9 @@
             <div class="wrapper_inner">
                 <h2 class="about_me_title">Contact</h2>
                 <address class="address">
-                    <p>Email: lugenieraymond@gmail.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Location: West Palm Beach, Florida</p>
+                    <p><a href="mailto:lugenieraymond@gmail.com">lugenieraymond@gmail.com</a></p>
+                    <p><a href="tel:(555) 123-4567">(555) 123-4567</a></p>
+                    <p><a href="https://www.google.com/maps/place/West+Palm+Beach,+Florida" target="_blank">West Palm Beach, Florida</a></p>
                 </address>
                 <p class="github_link">GitHub: <a href="https://www.github.com/Cuckoolulu"
                         target="_blank">Cuckoolulu</a></p>
@@ -70,6 +77,11 @@
             </div>
         </section>
     </main>
+    <footer class="site_footer">
+    <div class="wrapper_inner">
+        <p>&copy; 2024 Lugenie Raymond. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 
 </html>
