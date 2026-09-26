@@ -1,1 +1,11 @@
-
+body {
+   background-color: #FFF9F0;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+.about_me_text {
+    line-height: 32px;
+    background-image: repeating-Linear-gradient(to bottom, transparent 0px, transparent 31px, #DCD9E8 31px, #DCD9E8 32px);
+}
