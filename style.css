@@ -5,6 +5,7 @@ body {
    background-color: #FFFDF7;
    padding: 62px;
    line-height: 32px;
+   position: relative;
    background-image:
   linear-gradient(
     to right,
@@ -19,7 +20,18 @@ body {
     transparent 31px,
     #CBD9E7 31px,
     #CBD9E7 32px
-  );}
+  );
+}
+
+body::before{
+  content:"";
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 64px;
+  background-color: #FFFDF7;
+}
 h1 {
     color: rgb(56, 88, 219);
     margin: 0;
@@ -80,4 +92,19 @@ a{
  align-items: center;
  gap: 24px;
  flex-wrap: nowrap;
+}
+.address p {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+.photo_scrap {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  padding: 12px 12px 35px 12px;
+  box-shadow: 3px 5px 12px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+  margin-bottom: 32px;
 }
