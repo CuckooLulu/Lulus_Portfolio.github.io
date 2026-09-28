@@ -25,7 +25,7 @@ body {
 
 body::before{
   content:"";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;  
   width: 100%;
@@ -87,7 +87,7 @@ a{
   background-color: transparent;
   transform: translateY(-7.5px);
 }
-.wrapper_inner {
+.header_inner {
  display: flex;
  align-items: center;
  gap: 24px;
@@ -100,29 +100,71 @@ a{
 }
 
 .photo_scrap {
+  float: left;
+  margin-right: 32px;
+  margin-bottom: 16px;
   position: relative;
   background-color: white;
   padding: 12px 12px 35px 12px;
   box-shadow: 3px 5px 12px rgba(0,0,0,0.15);
   transform: rotate(-2deg);
-  flex-shrink: 0;
+}
+
+.about_me::after {
+  content: "";
+  display: block;
+  clear: both;
+
 }
 .profile_pic {
-  display:flex;
-  width: 350px;
+  display:block;
+  width: 320px;
   max-width: 100%;
+  height: auto;
 }
 
-tape{
+.tape{
   position: absolute;
-  width: 100px;
-  height: 28px;
-  background-color: rgba(255,220,225,0.75);
-  top: -14px;
+  width: 90px;
+  height: 24px;
+  background-color: rgba(255,220,225,0.8);
+  top: -12px;
   left: 50%;
-  transform: translateX(-50%)rotate(-2deg);
+  transform: translateX(-50%)rotate(2deg);
 }
+#tape{
+  position: absolute;
+  width: 90px;
+  height: 24px;
+  background-color: rgba(255,220,225,0.8);
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%)rotate(2deg);}
 
+  #tape2 {
+  position: absolute;
+  width: 90px;
+  height: 24px;
+  background-color: rgba(255,220,225,0.8);
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%)rotate(2deg);}
+
+  #tape3{
+  position: absolute;
+  width: 90px;
+  height: 24px;
+  background-color: rgba(255,220,225,0.8);
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%)rotate(2deg);}
+
+.about_me p,
+.about_me h2,
+.about_me h3,
+.about_me blockquote {
+  line-height: 32px;
+}
 .about_me_title{
   display: inline-block;
   background-color: #FFDDE6;
@@ -152,13 +194,10 @@ tape{
 }
 
 .contact{
-  background-color: rgba(255,255,255,0.85);
 
   padding: 24px;
 
   width: fit-content;
-  box-shadow: 3px 4px 10 px rgba(0,0,0,0.12);
-
   transform: rotate(1deg);
   margin-top: 32px;
 }
@@ -168,12 +207,16 @@ tape{
   height: 140px;
   object-fit: cover;
   margin-bottom: 16px;
-
-  border: 2px solid #f8e98a;
+  border: 6px solid white;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.12);
 }
-.about_layout{
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.about_me{
+  transform: translateY(-7.5px);
+}
+.about_me h2,
+.about_me h3,
+.about_me p,
+.about_me blockquote{
+  margin-top: 0;
+  margin-bottom: 32px;
 }
