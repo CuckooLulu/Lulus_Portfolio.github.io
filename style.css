@@ -220,3 +220,16 @@ a{
   margin-top: 0;
   margin-bottom: 32px;
 }
+
+.project_button {
+  border: none;
+  background-color: #FFDDE6;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 2px 2px 0 #E6A0AF;
+}
+
+.project_button:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
