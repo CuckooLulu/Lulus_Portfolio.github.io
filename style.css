@@ -132,32 +132,6 @@ a{
   left: 50%;
   transform: translateX(-50%)rotate(2deg);
 }
-#tape{
-  position: absolute;
-  width: 90px;
-  height: 24px;
-  background-color: rgba(255,220,225,0.8);
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%)rotate(2deg);}
-
-  #tape2 {
-  position: absolute;
-  width: 90px;
-  height: 24px;
-  background-color: rgba(255,220,225,0.8);
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%)rotate(2deg);}
-
-  #tape3{
-  position: absolute;
-  width: 90px;
-  height: 24px;
-  background-color: rgba(255,220,225,0.8);
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%)rotate(2deg);}
 
 .about_me p,
 .about_me h2,
@@ -232,4 +206,23 @@ a{
 
 .project_button:hover {
   transform: rotate(-1deg) scale(1.03);
+}
+
+.goal_board{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.goal_note{
+  width: 260px;
+  min-height: 220px;
+  background-color: #EAF4FF;
+  transform: rotate(1deg);
+  padding: 16px;
+  box-shadow: 4px 5px 10px rgba(0,0,0,0.15);
+
+}
+.career_list{
+  padding-left: 24px;
 }
