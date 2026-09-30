@@ -81,7 +81,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0 0 32px 0;
   padding: 0;
   background-color: transparent;
@@ -91,7 +91,7 @@ a{
  display: flex;
  align-items: center;
  gap: 24px;
- flex-wrap: nowrap;
+ flex-wrap: wrap;
 }
 .address p {
   font-size: 14px;
@@ -160,10 +160,11 @@ a{
 .project_note{
   width: 260px;
   min-height: 320px;
-  background-color: #FFF3A6;
-  transform: rotate(-2deg);
+  background-color: #f3dafb;
   padding: 16px;
   box-shadow: 4px 5px 10px rgba(0,0,0,0.15);
+  font-family: cursive, sans-serif;
+  position: relative;
 
 }
 
@@ -221,8 +222,18 @@ a{
   transform: rotate(1deg);
   padding: 16px;
   box-shadow: 4px 5px 10px rgba(0,0,0,0.15);
+    font-family: cursive, sans-serif;
+  position: relative;
 
 }
 .career_list{
   padding-left: 24px;
 }
+.goals {
+margin-top: 32px;
+}
+
+.project_message {
+margin-top: 16px;
+margin-bottom: 0;
+font-weight: bold;}
